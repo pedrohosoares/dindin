@@ -664,7 +664,7 @@ function seuDinheiroEscolhas($dados){
 }
 function cartaoDindin($valores){
 	?>
-	<section class="table" style="padding-bottom: 15px !important;">
+	<section class="table responsiveCartao" style="padding-bottom: 15px !important;">
 		<div class="frame mgtop50">
 			<div class="titulo wr mgtopm45">
 				<h2 class="black"><?php echo $valores['home']['parte4']['titulo']; ?></h2>
@@ -690,7 +690,7 @@ function cartaoDindin($valores){
 
 function cartaoDinDinVisaPrePago($valores){
 	?>
-	<section class="table" style="padding-bottom: 15px !important;">
+	<section class="table responsiveDindinVisa" style="padding-bottom: 15px !important;">
 		<div class="frame mgtop50">
 			<div class="titulo wl mgtopm45">
 				<h2 class="black"><?php echo $valores['home']['parte5']['titulo']; ?></h2>
@@ -848,7 +848,7 @@ function carrousel($valores){
 function perguntas($valores){
 	if(isset($valores['home'])){
 		?>
-		<section class="whiteminus">
+		<section class="whiteminus responsiveDindinVisa">
 			<div class="frame">
 				<div class="wr">
 					<div class="sanfona">

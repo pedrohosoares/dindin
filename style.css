@@ -883,6 +883,14 @@ button.botaoTitulo{
 button.botaoTitulo:hover{
 	background: #1b9849;
 }
+@media (min-width: 1349px){
+	.responsiveCartao{
+		margin-bottom: -140px;
+	}
+	.responsiveDindinVisa{
+		margin-bottom: -100px;
+	}
+}
 @media (max-width: 1026px){
 	.lir1,.lir2,.lir3{
 		right: 21px;
@@ -1029,6 +1037,9 @@ button.botaoTitulo:hover{
 	}	
 }
 @media (max-width: 655px){
+	section.whiteminus.responsiveDindinVisa {
+    	margin-bottom: 30px;
+	}
 	.cel{
 		display: none !important;
 	}
