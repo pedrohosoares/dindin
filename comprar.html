@@ -1,0 +1,2522 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+	@font-face{
+		font-family: 'dindin';
+		src:url(fontes/DINRegular.ttf);
+	}
+	body,html{
+		margin:0;
+		padding:0;
+		font-family: sans-serif;
+		height: 100%;
+		min-height: 100%;
+	}
+	body{
+		overflow-x: hidden;
+		height: 100%;
+		min-height: 100%;
+	}
+	form#enviadados{
+
+	}
+	section{
+		width: 100%;
+		height: 100%;
+		min-height: 100%;
+		display: table !important;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	section div.frame{
+		width: 90%;
+		margin: auto;
+	}
+	.zindexHight{
+		z-index: 99;
+	}
+	.background{
+		background-size: 100%;
+		height: auto;
+		/*min-height: 689px;*/
+		margin-top: -16px;
+	}
+	.background h1 {
+		margin-top: -10px;
+	}
+	h1{
+		font-size: 66px !important;
+	}
+	/* LISTA */
+	.background ul{
+		margin-top: -5px;
+	}
+	.background ul li{
+		float: left;
+		color: #FFF;
+		list-style: none;
+		margin-left: 46px;
+	}
+	.background ul li a{
+		color: #FFF;
+		font-size: 20px;
+		text-decoration: none;
+		font-weight: 600;
+	}
+	.menuScroll{
+		background: #26d466 !important;
+		height: 85px;
+		width: 100% !important;
+		position: fixed;
+		padding-top: 27px;
+		margin-top: -34px !important;
+	}
+	nav{
+		position: absolute;
+		right: 0;
+	}
+	.greenwater .titulo h3{
+		font-size: 2.2vw;
+		color:#FFF;
+	}
+	.lista ul li{
+		list-style: none;
+		margin-left: -40px;
+		font-size: 20px;
+		color: #505050;
+		margin-bottom:15px;
+	}
+	.lista ul li:before{
+		content:">";
+		color:#26d466;
+		font-size: 20px;
+		margin-right: 15px;
+		font-family: sans-serif;
+	}
+	/* FIM LISTA */
+
+	/* IMGS */
+	img.icones_img{
+		cursor: pointer;
+		width: 7vw !important;
+	}
+	img.imgbackground{
+		position: absolute;
+		width: 100%;
+		z-index: -1;
+	}
+	img.logotipo{
+		float: left;
+		position: absolute;
+		width: 7vw;
+		max-width: 40px;
+		min-width: 24px;
+		margin-top:5px;
+	}
+	img.all{
+		width: 100%;
+	}
+	img.s79{
+		width: 76% !important;
+	}
+	img.s90{
+		width: 90%;
+	}
+	img.h100{
+		height: 100px;
+	}
+	img.pulllwithoutleft{
+		margin-top: -9%;
+		margin-left: -12%;
+		margin-bottom: -9.3%;
+	}
+	.glyphicon{
+		font-size: 22px;
+		color:#333;
+	}
+	.fontweigt100{
+		font-weight: 100;
+		font-size: 15px;
+		color:#333;
+	}
+	/* FIM IMGS */
+
+	/* IMG ICONES */
+	.imgicones{
+		width: 430px;text-align: left;padding-right: 20px;
+	}
+	.imgicones .img{
+		float: left;padding-right: 20px;height: 90px;
+	}
+	/* FIM IMG ICONES */
+
+
+	/* INICIO  FLOATS*/
+	.pullright{
+		float:right;
+	}
+	.pullleft{
+		float:left;
+	}
+	.marginlm30{
+		margin-left: -30px;
+	}
+	.marginrm30{
+		margin-right: -30px;
+	}
+	.marginrm28{
+		margin-right: -28px;
+	}
+	.marginr28{
+		margin-right: 28px;
+	}
+	.textright{
+		text-align: right;
+	}
+	.textleft{
+		text-align: left;
+	}
+	.textcenter{
+		text-align: center;
+	}
+
+	/* FIM FLOATS */
+
+	.cabecalho{
+		width: 90%;
+		height: 124px;
+		position: fixed;
+		left: 5%;
+	}
+	.btn{
+		border-radius: 19px;
+		border: 1px solid #FFF;
+		padding: 10px 15px 10px 15px;
+		text-decoration: none;
+		font-size: 20px;
+		display: inline;
+		text-align: center;
+		font-weight: 600;
+		cursor: pointer;
+	}
+	.btn.btn-bordacinza{
+		border:1px solid #363636;
+		color:#363636;
+	}
+	.btn.btn-branco{
+		background: none;
+		color: #FFF;
+	}
+	li.btn:hover,.btn.btn-branco:hover,.btn.btn-bordacinza:hover{
+		background: #26d466;
+		color: #FFF;
+		border: 0px;
+	}
+	.btn.btn-verde{
+		background: #26d466;
+		color: #FFF;
+		border:0px;
+	}
+	.btn:hover{
+		transition:0.4s;
+		font-size: 23px;
+	}
+	.btn.btn-borda-verde{
+		color: #26d466;
+		border: 1px solid #26d466;
+	}
+	.paddinglr50{
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	.paddingl50{
+		padding-left: 50px;
+	}
+	.paddingr50{
+		padding-right: 50px;
+	}
+	.mgtop30{
+		margin-top: 30px;
+	}
+	.mgtopm50{
+		margin-top: -60px;
+	}
+	.mgtopm20{
+		margin-top: -20px;
+	}
+	.mgtop40{
+		margin-top: 40px;
+	}
+	.mgtop172{
+		margin-top: 155px !important;
+	}
+	.mgleft40{
+		margin-left: 40px;
+	}
+	.mgtopm10{
+		margin-top: -10px;
+	}
+	.border{
+		border-bottom: 1px solid #959595;
+		width: 120%;
+		margin: auto;
+		margin-top: -30px;
+		text-align: center;
+		margin-left: -10%;
+	}
+	a#abreMenu{
+		display: none;
+		text-decoration: none;
+		color: #FFF;
+		font-weight: 600;
+		position: absolute;
+		right: 10px;
+		top: 20px;
+	}
+	.link-verde{
+		color:#26d466;
+		text-decoration: underline;
+		font-size: 20px;
+	}
+	ol li {
+		font-size: 19px;
+	}
+	/* SANFONA PERGUNTAS  */
+	.texto{
+		border-bottom: 1px solid #acacac;
+		padding-bottom: 30px;
+		padding-top: 30px;
+	}
+	.texto .pergunta{
+		font-weight: 600;
+		cursor: pointer;
+	}
+	.texto .pergunta:after{
+		content: "V";
+		font-weight: 600;
+		font-size: 19px;
+		float: right;
+	}
+	.texto .pergunta.viracima:after{
+		transform: rotate(180deg);
+		-webkit-transform: rotate(180deg);
+		-ms-transform: rotate(180deg);
+	}
+	.texto .resposta{
+		display: none;
+		margin-top: 20px;
+	}
+
+
+	/* TITULO */
+	.titulo{
+		margin-top: 40px;
+		width: 100%;
+		height: 527px;
+	}
+	.tituloCima{
+		margin-top:6%;
+	}
+	h1,h2,h3{
+		font-weight: 600;
+	}
+	.titulo h1,.titulo h1 p{
+		font-size: 5.4vw;
+		color: #FFF;
+	}
+	.titulo h1.black,.titulo h1.black p{
+		color: #333333 !important;
+	}
+	.titulo h2,.titulo h2 p{
+		font-size: 55px;
+		margin-bottom: -10px;
+	}
+	h2.f30,h2.f30 p{
+		font-size: 30px;
+	}
+	h1.black p{
+		font-size: 5.4vw !important;
+	}
+	h1.vw4{
+		margin-bottom: -15px;
+	}
+	h1.vw4,h1.vw4 p{
+		font-size: 4vw !important;
+		color: #333;
+	}
+	h1.titlecenter{
+		text-align: center;
+		color: #333333;
+		font-size: 55px;
+	}
+	h2.white p{
+		color:#FFF;
+	}
+	/* FIM TITULO */
+	/* CORES */
+	.white{
+		color:#FFF;
+	}
+	.black{
+		color:#333333 !important;
+	}
+	.whiteminus{
+		background: #f9f9f9;
+	}
+	.greenwater{
+		background: #007079;
+	}
+	.fontgreen{
+		color:#26d466 !important;
+	}
+	.bggreen{
+		background: #26d466;
+	}
+
+	/* CURSORES  */
+	.cursor{
+		position: absolute;
+		font-family: sans-serif;
+		font-weight: 900;
+		font-size: 33px;
+		color: #26d466;
+		cursor: pointer;
+		margin-top: -85px;
+	}
+	.cursor.esquerdo{
+		left:18%;
+	}
+	.cursor.direito{
+		right: 15%;
+	}
+	.slider{
+		width: 58%;
+		margin: auto;
+		height: 110px;
+		overflow:hidden;
+	}
+	.slider li{
+		list-style: none;
+		float: left;
+		width: 33%;
+	}
+	.slider img{
+		width: 88%;
+		height: 105px;
+		padding: 20px;
+		filter: gray;
+		-webkit-filter: grayscale(1);
+		filter: grayscale(1);
+		opacity: 0.6;
+	}
+	.slider img.color{
+		filter: unset;
+		-webkit-filter: grayscale(0);
+		filter: grayscale(0);
+		opacity: 1;
+		transform:0.3s;
+	}
+	/* FIM CURSORES */
+
+	/* FOOTER */
+	footer img{
+		width:unset !important;
+		height: unset !important;
+	}
+	footer h3{
+		color:#FFF;
+	}
+	footer a{
+		color:#FFF;
+		text-decoration: none;
+	}
+	footer ul li, footer ul li a{
+		margin-left:-20px;
+	}
+	footer ul li,footer ul li a{
+		list-style: none;
+		text-decoration: none;
+		color: #FFF;
+	}
+	.rodape{
+		border-top:1px solid #FFF;
+		text-align: center;
+		margin: auto;
+		padding-top:15px;
+		padding-bottom:15px;
+	}
+	.rodape p{
+		color:#FFF;
+		text-decoration: none;
+	}
+	.rodape a{
+		color:#FFF;
+		text-decoration: underline;
+	}
+	.underline{
+		text-decoration: underline;
+		color:#FFF;
+	}
+
+	/* FIM FOOTER */
+
+	/* PARAGRAFOS */
+	p,p.fontes{
+		font-size: 20px;
+		color:#505050;
+	}
+	p.fonteswhite{
+		font-size: 30px;
+		color:#FFFFFF;
+	}
+	.font20px{
+		font-size: 20px;
+	}
+	/* FIM PARAGRAFOS */
+
+	/* FONT SIZE */
+	.font55{
+		font-size: 55px !important;
+	}
+	/* width left and right */
+	.wl{
+		width: 48% !important;
+		float:left !important;
+	}
+	.wlcabecalho{
+		width: 54% !important;
+		float:left !important;
+	}
+	.wr{
+		width: 49% !important;
+		float: right !important;
+	}
+	.w25{
+		width: 24.8%;
+		float:left;
+	}
+	.w25 ul li{
+		list-style: none;
+	}
+	.mgtop30px{
+		margin-top:30px;
+	}
+	.mgbottom5{
+		margin-bottom: 5px;
+	}
+	.mgbottomm145{
+		margin-bottom: -145px;
+	}
+	.mgbottomm170{
+		margin-bottom: -170px;
+	}
+	.mgtopm10{
+		margin-top: -10px;
+	}
+	.mgtop70{
+		margin-top:70px;
+	}
+	.mgtopm26{
+		margin-top: -26px;
+	}
+	.mgtopm45{
+		margin-top:-45px !important;
+	}
+	.mgtop50{
+		margin-top:50px !important;
+	}
+	.mgtopm64{
+		margin-top: -64px;
+	}
+	.mgleft20{
+		margin-left: 20px;
+	}
+	.paddingtop{
+		padding-top: 30px;
+	}
+	.pull10left{
+		margin-left: 60px;
+	}
+	.text1{
+		margin-top: -20px;
+	}
+	.width100por{
+		width: 100%;
+	}
+	.width70por{
+		width: 70%;
+	}
+	.screen{
+		display: block;
+	}
+	.mobile{
+		display: none;
+	}
+	.circuloMenor{
+		z-index: 1;
+		border-radius:50%;
+		width: 44vw;
+		height: 44vw;
+		background:#ececec;
+		position: absolute;
+		transform: translate(5%, 5%);
+	}
+	.circuloMaior{
+		z-index:0;
+		border-radius:50%;
+		width: 49vw;
+		height: 49vw;
+		background:#f5f5f5;
+		position: absolute;
+		transform: translate(0%, 0%);
+	}
+	.centroDivCirulo{
+		z-index: 2;
+		position: absolute;
+		margin: auto;
+		left: 30%;
+	}
+	.centroDivCiruloInterno{
+		left: 27%;
+		position: absolute;
+	}
+	.tituloCirculo{
+		position: absolute;
+		z-index: 2;
+		left: 30%;
+	}
+
+	ul.nolist li{
+		list-style: none;
+	}
+	.cel{
+		margin-bottom: 150px;
+		position: static;
+		left: 0;
+		width: 119%;
+		margin-left: -6%;
+	}
+	.listaLeft{
+		width:100%;
+		float:left;
+		position: absolute;
+	}
+	.ulLeft{
+		margin-top: 11%;
+		z-index: 9;
+		margin-right: 30%;
+		right: 20%;
+	}
+	.li1Left{
+		position: absolute;
+		left:4%;
+		z-index: 4;
+		width: 100%;
+	}
+	.li2left{
+		position: absolute;
+		left:3%;
+		z-index: 4;
+		width: 100%;
+		margin-top: 11%;
+	}
+	.li3left{
+		position: absolute;
+		left:3%;
+		z-index: 4;
+		width: 100%;
+		margin-top: 19%;
+	}
+	.divcel{
+		width:29%;float:left;position: absolute;left: 38%;z-index: 2;margin-top: 8%;
+	}
+	.divlist2{
+		width:29%;
+		float:right;
+		z-index: 8;
+		position: absolute;
+		right: 2px;
+	}
+	.ullistr{
+		margin-top: 39%;
+		z-index: 9;
+		margin-right: 30%;
+		right: 20%;
+	}
+	.lir1{
+		position: absolute;
+		right: 10%;
+		z-index: 4;
+		width: 100%;
+	}
+	.lir2{
+		position: absolute;
+		z-index: 4;
+		margin-top: 31%;
+		right: 2%;
+		width: 100%;
+	}
+	.lir3{
+		margin-top: 61%;
+		position: absolute;
+		right: 5%;
+		width: 100%;
+	}
+	/* PAGE AND POST */
+	.page img,.post img{
+		width: 100%;
+		height: auto;
+		margin:auto;
+		text-align: center;
+	}
+
+	.tituloHeader{
+		position: absolute;
+		top: 6%;
+		margin: 0 auto;
+		text-align: center;
+		color: #FFF;
+		font-size: 4vw;
+		width: 90%;
+	}
+	p.ptitulo{
+		width: 50%;
+		margin: auto;
+		font-size: 15px;
+	}
+	section.iconesListaPostPage{
+		padding-top:10px;
+	}
+	section.iconesListaPostPage ul li{
+		cursor: pointer;
+		width: 230px;
+	}
+	.iconesListaPostPage ul{
+		display: table;
+		margin: 0 auto;
+	}
+	.iconesListaPostPage ul li{
+		float: left;
+		list-style: none;
+		border-right: 1px solid #CCC;
+		padding: 0px 20px 0px 20px;
+		margin-top: 20px;
+	}
+	.iconesListaPostPage ul li:last-child{
+		border-right: 0px;
+	}
+	.iconesListaPostPage ul li a{
+		text-decoration: none;
+		font-size: 22px;
+		font-weight: 600;
+		color: #000;
+	}
+	.iconesListaPostPage ul li:hover a{
+		color: #26d466;
+	}
+	section.page{
+		width: 90%;
+		margin: auto;
+	}
+	section.page h1{
+		color: #000;
+		font-size: 4.3vw;
+	}
+	.tituloPequeno{
+		font-size: 20px;
+		font-weight: 500;
+	}
+	.font3vw{
+		font-size: 3vw;
+	}
+	ol li {
+		font-size: 19px;
+	}
+	.font41vw{
+		font-size: 4.1vw;
+	}
+	.textcenter{
+		text-align: center;
+	}
+
+	.bordamidle:before{
+		content:'_____________';
+		padding-right: 20px;
+	}
+	.bordamidle:after{
+		content:'_____________';
+		padding-left: 20px;
+	}
+	.whiteColor{
+		color:#FFF;
+	}
+	button.botaoTitulo{
+		background: #26d466;
+		border: 0px;
+		padding: 10px 25px 10px 25px;
+		font-size: 20px;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+	button.botaoTitulo:hover{
+		background: #1b9849;
+	}
+
+	button.validar{
+		background: #50ba63;
+		border: 0px;
+		padding: 7px;
+		border-radius: 10px;
+		margin-top: 10px;
+		color: #FFF;
+		padding-left: 15px;
+		padding-right: 15px;
+		cursor: pointer;
+	}
+	@media (max-width: 1026px){
+		.lir1,.lir2,.lir3{
+			right: 21px;
+		}
+		.li1Left,.li2Left,.li3Left{
+			left:20px;
+		}
+	}
+	/* FIM PAGE */
+	@media (max-width: 993px){
+		.mgtop172{
+			margin-top: unset !important;
+		}
+		footer{
+
+		}
+		.w25{
+			width: 22.8%;
+		}
+	}
+	@media (max-width: 986px){
+		.width100m{
+			width:100%;
+		}
+	}
+	@media (max-width: 970px){
+		.tituloCirculo {
+			position: static;
+			z-index: 2;
+			margin-bottom: -34px;
+		}
+	}
+	@media (max-width: 840px){
+		nav{
+			position: unset;
+			right: unset;
+		}
+		.mgbottomm170{
+			margin-bottom: 0px;
+		}
+		.bordamidle:after,.bordamidle:before{
+			content: '______';
+		}
+		.tituloCirculo {
+			position: static;
+			z-index: 2;
+			margin-top: -52px;
+			margin-bottom: 0px;
+		}
+		.imgicones{
+			width:100%;
+			min-height: 78px;
+			margin-bottom: 20px;
+		}
+		a#abreMenu{
+			display: block;
+			top:9%;
+		}
+		.wr,.wl{
+			width: 100% !important;
+			float:none !important;
+		}
+		.background{
+			min-height: auto;
+		}
+		nav{
+			margin-top: 88px;
+			width: 101%;
+		}
+		.background ul{
+			padding-right: 37px;
+			padding-bottom: 10px;
+			padding-top: 10px;
+			display: none;
+			background: #FFF;
+			width: 100%;
+			border-bottom: 1px solid #CCC;
+			box-shadow: 0px 5px 20px #CCC;
+		}
+		.background ul li{
+			float: none;
+			margin-left:unset;
+			margin-top: 0px;
+			text-align: center;
+			padding-top:25px;
+			padding-bottom:25px;
+			display: block;
+		}
+		.background ul li:hover{
+			background: #EEE;
+			margin-left: -30px;
+			margin-right: -30px;
+		}
+		.background ul li:last-child{
+			border-bottom:0px;
+		}
+		.background ul li.btn{
+			padding:unset;
+			border-radius: unset;
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+		.background ul li a{
+			color: #000;
+			font-weight: 600;
+		}
+		.titulo{
+			height: auto;
+		}
+		.titulo.wl.tituloCima{
+			margin-top: -90px;
+			height: auto;
+		}
+		img.pulllwithoutleft{
+			margin:auto;
+		}
+		.pull10left,.marginlm30{
+			margin:auto;
+		}
+		.pullright{
+			float:none;
+		}
+		img.overFlowImg{
+			position: absolute;
+			left: 0;
+			margin-top: -85px !important;
+			opacity: 0.2;
+			clip: rect(46px, auto, 536px, 0px);
+		}
+		.screen{
+			display: none;
+		}
+		.mobile{
+			display: block;
+		}
+	}
+	@media (max-width: 800px){
+		.w25{
+			width: 32.8%;
+			min-height: 200px;
+		}	
+	}
+	@media (max-width: 655px){
+		.cel{
+			display: none !important;
+		}
+		.w25{
+			width: 49.8%;
+		}	
+		.slider li{
+			width: unset;
+		}
+		.slider li img{
+			width: 205px;
+			height: 105px;	
+			filter: unset;
+			-webkit-filter: grayscale(0);
+			filter: grayscale(0);
+			opacity: 1;
+			transform: 0s;
+		}
+		section.page h1 {
+			text-align: left;
+			font-size: 26px;
+		}
+		h2.font3vw{
+			font-size: 26px;
+		}
+		.tituloPequeno span{
+			display: block;
+		}
+	}
+	@media (max-width: 452px){
+		.w25{
+			width: 100%;
+			min-height: auto;
+		}
+		h1.titlecenter{
+			font-size: 8vw;
+		}
+		.querSaberMais{
+			margin-top:20px;
+		}
+	}
+	@media (max-width: 584px){
+		.menuScroll{
+			padding-top: 0px;
+		}
+		a#abreMenu{
+			top:30px;
+		}
+		.cabecalho .linkLogotipo{
+			position: absolute;
+			top: 58px;
+		}
+		.btn.btn-verde{
+			display: block;
+		}
+		.link-verde{
+			display: block;
+			margin-top: 10px;
+			margin-left:5px;
+			padding-left:0px;
+		}
+		img.imgbackground{
+			width: 100%;
+			height: 42%;
+		}
+		img.logotipo{
+			top: -20px;
+		}
+		.greenwater .titulo h3 {
+			font-size: 6.2vw;
+		}
+		.titulo h1.black, .titulo h1.black p{
+			font-size: 8vw !important;
+		}
+		h1.vw4, h1.vw4 p {
+			font-size: 9vw !important;
+		}
+		.titulo h2, .titulo h2 p {
+			font-size: 9vw;
+		}
+		.cartao{
+			width: 100%;
+		}
+		p{
+			text-align: justify;
+		}
+		.tituloCima{
+			margin-top:75px;
+		}
+		.mgleft40{
+			margin-left:unset;
+		}
+		.mgtop172{
+			margin-top:unset !important;
+		}
+		.font41vw {
+			font-size: 20px;
+		}
+	}
+	@media (max-width: 516px){
+		section.iconesListaPostPage ul li{
+			width: 90%;
+		}
+		.iconesListaPostPage ul li{
+			border-right: none;
+			border-bottom: 1px solid #CCC;
+		}
+		.iconesListaPostPage ul li:last-child{
+			border-bottom: none;
+		}
+	}
+	@media (max-width: 408px){
+		.mgtopmobile{
+			padding-top: 20px;
+		}
+	}
+	@media (max-width: 321px){
+		.wlcabecalho{
+			width: 100% !important;
+		}
+		.wlcabecalho.tituloCima h1,.wlcabecalho.tituloCima h1 p{
+			font-size: 21px !important;
+		}
+		.slider li{
+			margin-left: -54px;
+		}
+	}
+</style>
+<style type="text/css">
+p.paginacompra{
+	color:#0a7179;
+	font-size: 25px;
+}
+div.cartao{
+	width: 375px;
+	margin: auto;
+	border: 5px solid #6cc27e;
+	border-radius: 10px;
+	padding: 15px 65px 15px 65px;
+}
+div.cartao h1{
+	font-size: 27px !important;
+	text-align: center;
+	color: #6cc27e;
+	padding-bottom: 30px;
+}
+div.cartao p.valor{
+	font-size: 30px;
+	font-weight: 600;
+	text-align: center;
+	color: #6cc27e;
+	padding-top: 35px;
+}
+.botoes{
+	text-align: center;
+}
+.botoes .botaodindin{
+	background: #89c86a; 
+	background: -moz-linear-gradient(left, #89c86a 0%, #0a7179 100%);
+	background: -webkit-linear-gradient(left, #89c86a 0%,#0a7179 100%); 
+	background: linear-gradient(to right, #89c86a 0%,#0a7179 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#89c86a', endColorstr='#0a7179',GradientType=1 ); 
+	color:#FFF;
+	border: 0px;
+	border-radius: 50px;
+	padding: 12px;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 16px;
+	cursor: pointer;
+	margin-left: 3%;
+}
+.botoes .btnvoltar{
+	background: #FFF; 
+	color:#50ba63;
+	border:1px solid #50ba63;
+	border-radius: 50px;
+	padding: 12px;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 16px;
+	cursor: pointer;
+	margin-right: 3%;
+}
+.mgtop60{
+	margin-top: 60px;
+}
+.passos div.numeros{
+	text-align: center;
+	width: 225px;
+	margin: auto;
+	border: 1px solid #50ba63;
+	border-radius: 50px;
+	height: 19px;
+}
+.passos div.numeros div{
+	float: left;
+	width: calc(100%/5);
+	cursor: pointer;
+	color: #50ba63;
+	font-weight: 600;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.passos div.numeros div:hover{
+	background: #89c86a; 
+	border-radius: 50px;
+	color:#FFF;
+}
+.formulario{
+	text-align: center;
+	padding-top: 20px;
+}
+.formulario label{
+	display: block;
+	margin:auto;
+	margin-top: 30px;
+	width: 523px;
+}
+.formulario label:hover{
+	color: #0a7179;
+}
+.formulario label:hover span.titulo-form,.formulario label:hover span.description{
+	color: #0a7179;
+}
+.formulario label:hover input{
+	border-bottom: 1px solid #0a7179;
+	color: #0a7179;
+}
+.formulario label input{
+	border: 0px;
+	border-bottom: 1px solid #98c6ca;
+	color: #98c6ca;
+	font-size: 30px;
+	font-weight: 600;
+	text-align: center;
+	margin-top: 12px;
+	width: 100%;
+}
+.formulario.cartaocredito label input {
+	width: 100% !important;
+	background: #f8f9f9;
+	text-align: left;
+	font-size: 17px;
+	font-weight: 100;
+}
+.formulario label span.titulo-form{
+	color: #98c6ca;
+	font-weight: 600;
+}
+.formulario label .description{
+	display: block;
+	color:#98c6ca;
+	margin-top: 10px;
+}
+.formulario .flutua{
+	float: left;
+	width: 39%;
+	text-align: left;
+	padding-left: 100px;
+}
+.formulario .flutual{
+	float: left;
+	width: 39%;
+	text-align: left;
+	padding-right: 8%;
+}
+.formulario .flutualb2{
+	float: left;
+	width: 38%;
+	text-align: left;
+	margin-right: 7%;
+	padding-bottom: 20px !important;
+	padding-right: 2%;
+}
+.formulario .flutuab {
+	float: left;
+	width: 39%;
+	text-align: left;
+	padding-left: 100px;
+	margin-left:6%;
+	padding-bottom: 20px !important;
+}
+.formulario label.width30{
+	width: 30%;
+}
+.formulario label.width62{
+	width: 62%;
+}
+.formulario .flutual label input,.formulario .flutua label input{
+	width: 100%;
+}
+.formulario .flutua label input{
+	
+}
+.formulario .flutua input,.formulario .flutual input{
+	text-align: left;
+}
+.checkbox {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 22px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.checkbox input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: #eee;
+	border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox:hover input ~ .checkmark {
+	background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.checkbox input:checked ~ .checkmark {
+	background-color: #50ba63;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.checkbox input:checked ~ .checkmark:after {
+	display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.checkbox .checkmark:after {
+	left: 9px;
+	top: 5px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.bglightblue{
+	background: #f8f9f9;
+}
+.pullleft{
+	float:left !important;
+}
+.pullright{
+	float:right !important;
+}
+.paddingleft30px{
+	padding-left: 30px !important;
+}
+a.link_verde {
+	float: right;
+	padding-right: 30px;
+	color: #50ba63;
+	font-weight: 100;
+	font-size: 17px;
+}
+.fontfine{
+	color: #0a7179;
+	padding: 5px 0px 5px 0px;
+	font-size: 18px;
+}
+h3.screen{
+	margin-bottom: 5px;
+	color: #0a7179;
+}
+.pagamentoScreen{
+	width: 50%;
+	margin: auto;
+	padding: 10px;
+	text-align: left;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+span.screen strong{
+	color: #0a7179;
+	font-size: 12.2px;
+}
+.line{
+	border-bottom: 1px solid #0a7179;
+	width: 92%;
+	margin-top: 10px;
+}
+.cupom{
+	display: block;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-weight: 600;
+	color: #0a7179;
+}
+.h340{
+	height: 422px;
+}
+.h3402{
+	float:right !important;
+	margin-left:unset !important;
+	margin-right: 6%;
+	height: 422px; 
+}
+.h177{
+	height: 177px;
+}
+.cardsell{
+	width: 47%; height: 160px; display: block; 
+}
+.cardsell img{
+	width: 226px;
+}
+.carddescription{
+	width: 51%; height: 160px; display: block;
+}
+.pdescriptioncard{
+	font-weight: 300; display: block; margin-top: 41px;
+}
+.w94{
+	width: 94%;
+}
+.pr29{
+	padding-right: 29px;
+}
+.frame2{
+	padding-bottom: 50px;padding-top:1px;
+}
+.mgtop15px{
+	margin-top: 15px;
+}
+.select1{
+	font-weight: 100; color: #0a7179; font-size: 20px; margin-top: -10px !important;
+}
+.radio1{
+	width: 25px;height: 25px;
+	margin-left: -40px;
+	width: 100%;
+	position: absolute;
+	z-index: 999999999;
+}
+.describoleto{
+	font-size: 20px;color:#0a7179
+}
+.pdesc{
+	font-size: 19px; color: #0a7179; margin-top: 25px; display: block;
+}
+.agreen{
+	color: #50ba63;
+}
+.div2{
+	padding-bottom: 50px;padding-top:1px;width: 90%;
+}
+.div3{
+	display: block;width: 100%;min-height: 200px;
+}
+.div4l{
+	display: block;float:left;width: 46%;
+}
+.div4r{
+	display: block;float:right;width: 45%;
+}
+.meslabel{
+	float: left;width: calc(100%/2);
+}
+.mesinput{
+	border: 0px; border-bottom: 1px solid #98c6ca; height: 50px; font-size: 19px; width: calc(90%/3);
+	background: #f8f9f9;
+}
+.anoselect{
+	border: 0px; border-bottom: 1px solid #98c6ca; height: 50px; font-size: 19px; width: calc(90%/3);    margin-left: 5%; 
+	background: #f8f9f9;
+}
+.cvvinput{
+	width: calc(48%/3) !important;
+	width: 100px !important;
+	float: right !important;
+	margin-top: -55px !important;
+
+}
+.longline{
+	width:100%;border-bottom:1px solid #98c6ca;
+}
+.div5{
+	display: block;width: 100%;    min-height: 186px;
+}
+.div6{
+	display: block;float:left;width: 46%;
+}
+.div7{
+	width: 70%; float:left;
+}
+.div8{
+	width: 26%;float:right;margin-top: 80px;
+}
+.div9{
+	display: block;float:right;width: 45%;
+}
+.div10{
+	float: left; width: calc(58%/2); 
+}
+.div11{
+	float: right; width: 58%;
+}
+.div12{
+	display: block;width: 100%;min-height: 279px;
+}
+.div13{
+	float: left;     width: 40%;
+}
+.div14{
+	float: right;width: 18%;
+}
+.div15{
+	float: left;width: 18%;margin-left: 5%;
+}
+.inputano{
+	border: 0px;border-bottom: 1px solid #98c6ca;height: 50px;font-size: 19px;width: 100%;    background: #f8f9f9;
+}
+.inputestado{
+	margin-top: 17px !important;
+}
+.div16{
+	width: 150px;    margin-right: 5%;
+}
+.div17{
+	width: 150px;
+}
+footer{
+	background: #0a7179;height: 61px;width: 100%;bottom: 0;display: block;
+}
+section{
+	display: none !important;
+}
+section[ordem="1"]{
+	display: block !important;
+}
+.endereco_entrega{
+	float: right;
+	width: 25px;
+	height: 25px;
+	margin-right: 30px;
+}
+.formulario.cartaocredito label{
+	width:100%;
+}
+.codigoinput{
+	background: #f8f9f9;
+}
+@media (max-width: 1092px){
+	.carddescription{
+		width: 41%;
+
+	}
+}
+@media (max-width: 500px){
+	.line.longline{
+		display: none;
+	}
+	.mesinput,.anoselect,.cvvinput{
+		width:100% !important;
+	}
+	.anoselect{
+		margin-left:unset !important;
+	}
+	.cvvinput{
+		margin-top: unset !important;
+	}
+	.inputano{
+		width: 100%;
+	}
+	.paragrafo{
+		margin-top: unset !important;
+	}
+
+}
+@media (max-width:784px){
+	.paragrafo{
+		margin-top: 93%;
+	}
+}
+@media (max-width: 833px){
+	.line.longline{
+		display: none;
+	}
+	.paragrafo{
+		margin-top: 67%;
+	}
+	.formulario .flutuab,.formulario .flutualb2,.formulario .flutua,.formulario .flutual{
+		width: 84%;
+		float:unset !important;
+		padding-left: unset !important; 
+		margin: auto !important;
+		padding-right: unset !important;
+		padding: 20px;
+	}
+	.formulario label,.formulario label.width30,.formulario label.width62{
+		width: 100%;
+	}
+	.flutual.pullright{
+		float:unset !important;
+	}
+	.screen {
+		display: block;
+		margin: auto;
+	}
+	.space{
+		padding: 20px;
+		padding-top: 1px;
+		height: auto;
+	}
+	.line {
+		width: 94%;
+		margin-top: 10px !important;
+		margin-bottom: 10px !important;
+	}
+	.div4l,.div4r,.div6,.div13,.div11,.div9,.div10,.div14,.div15{
+		width: 100%;
+		margin-left: unset;
+	}
+	.div8{
+		margin-top:77px !important;
+	}
+	label.pullright{
+		float:unset !important;
+	}
+	.meslabel{
+		width: 73%;
+		float:left;
+	}
+	.cvvinput{
+		width: 25%;
+		float: right;
+	}
+	.formulario label input{
+		width: 90%;
+	}
+	label[for="dindin[cadastro][complemento]"]{
+		margin-top: 130px;
+	}
+}
+@media (max-width: 584px){
+	section{
+		width: 95%;
+		margin: auto;
+	}
+	.cartao{
+		width: 95% !important;
+		padding: 0px !important;
+		text-align: center;
+	}
+	img.all{
+		width: 70%;
+	}
+	div.cardsell img.all{
+		width: 40%;
+		display: none;
+	}
+	.formulario .flutuab, .formulario .flutualb2, .formulario .flutua, .formulario .flutual {
+		width: 93%;
+		height: auto;
+	}
+	.pagamentoScreen{
+		width: 90%;
+	}
+	.div16{
+		margin-right: unset;
+	}
+	.cardsell,.carddescription{
+		width: 100%;
+	}
+	.paragrafo {
+		margin-top: 114% ;
+	}
+}
+</style>
+</head>
+<body>
+	<form id="enviadados">
+		<section ordem="1">
+			<div class="topo">
+				<div class="logo textcenter">
+					<img src="images/logo_dindin_colorida.png" />
+				</div>
+				<p class="paginacompra textcenter">
+					Compre seu cartão Dindin
+				</p>
+				<div class="passos"></div>
+			</div>
+			<div class="cartao">
+				<div>
+					<h1>Cartão Dindin Internacional</h1>
+				</div>
+				<div>
+					<img src="images/cartao-cobranca.png" class="all" />		
+				</div>
+				<div>
+					<p class="valor">
+						R$14,90
+					</p>
+				</div>
+			</div>
+			<div class="botoes">
+				<button href="#" class="btnvoltar mgtop60 anterior" ordem="3">
+					VOLTAR
+				</button>
+				<button href="#" class="botaodindin mgtop60 proximo" ordem="2">
+					PRÓXIMO
+				</button>
+			</div>
+		</section>
+		<section ordem="2">
+			<div class="topo">
+				<div class="logo textcenter">
+					<img src="images/logo_dindin_colorida.png" />
+				</div>
+				<p class="paginacompra textcenter">
+					Preencha os campos abaixo e crie agora um cadastro
+				</p>
+				<div class="passos">
+					<div class="numeros">
+						<div numero="1">1</div>
+						<div numero="2">2</div>
+						<div numero="3">3</div>
+						<div numero="4">4</div>
+						<div numero="5">5</div>
+					</div>
+				</div>
+			</div>
+			<div class="formulario" number="0">
+				<label for="dindin[cadastro][cpf]">
+					<span class="titulo-form">CPF</span><br />
+					<input type="text" required name="dindin[cadastro][cpf]" maxlength="14" minlength="11" />
+				</label>
+				<label for="dindin[cadastro][email]">
+					<span class="titulo-form">E-mail</span><br />
+					<input type="email" required name="dindin[cadastro][email]" />
+				</label>
+				<label for="dindin[cadastro][senha]">
+					<span class="titulo-form">Criar senha da conta</span><br />
+					<span class="description">Essa é a senha que você utilizará para acessar sua conta pelo site ou aplicativo</span>
+					<input type="text" name="dindin[cadastro][senha]" required minlength="6" maxlength="10" />
+					<span class="description">A senha deve ter entre <strong>6 e 10 dígitos</strong>. Combine letras <strong>maiúsculas, minúsculas e números</strong></span>
+				</label>
+			</div>
+			<div class="botoes">
+				<button href="#" class="btnvoltar mgtop60 anterior" ordem="1">
+					VOLTAR
+				</button>
+				<button href="#" class="botaodindin mgtop60 proximo" ordem="3">
+					PRÓXIMO
+				</button>
+			</div>
+		</section>
+		<section ordem="3">
+			<div class="topo">
+				<div class="logo textcenter">
+					<img src="images/logo_dindin_colorida.png" />
+				</div>
+				<p class="paginacompra textcenter">
+					Para continuar o cadastro, informe seus dados pessoais
+				</p>
+				<div class="passos">
+					<div class="numeros">
+						<div numero="1">1</div>
+						<div numero="2">2</div>
+						<div numero="3">3</div>
+						<div numero="4">4</div>
+						<div numero="5">5</div>
+					</div>
+				</div>
+			</div>
+			<div class="formulario" number="1">
+				<label for="dindin[cadastro][nome_completo]">
+					<span class="titulo-form">Nome Completo</span><br />
+					<input type="text" required minlength="7" name="dindin[cadastro][nome_completo]" value="" />
+				</label>
+				<label for="dindin[cadastro][data_nascimento]">
+					<span class="titulo-form">Data de nascimento</span><br />
+					<input type="text" required name="dindin[cadastro][data_nascimento]" maxlength="10" minlength="10" />
+				</label>
+				<label for="dindin[cadastro][nome_completo_mae]">
+					<span class="titulo-form">Nome completo da mãe</span><br />
+					<input type="text" required minlength="7" name="dindin[cadastro][nome_completo_mae]" />
+				</label>
+				<label for="dindin[cadastro][celular]">
+					<span class="titulo-form">Número de celular</span><br />
+					<input type="text" required name="dindin[cadastro][celular]" />
+				</label>
+			</div>
+			<div class="botoes">
+				<button href="#" class="btnvoltar mgtop60 anterior" ordem="2">
+					VOLTAR
+				</button>
+				<button href="#" class="botaodindin mgtop60 proximo" ordem="4">
+					PRÓXIMO
+				</button>
+			</div>
+		</section>
+		<section ordem="4">
+			<div class="topo">
+				<div class="logo textcenter">
+					<img src="images/logo_dindin_colorida.png" />
+				</div>
+				<p class="paginacompra textcenter">
+					Agora informe o endereço de cadastro
+				</p>
+				<div class="passos">
+					<div class="numeros">
+						<div numero="1">1</div>
+						<div numero="2">2</div>
+						<div numero="3">3</div>
+						<div numero="4">4</div>
+						<div numero="5">5</div>
+					</div>
+				</div>
+			</div>
+			<div class="formulario" number="2">
+				<div class="flutua">
+					<label for="dindin[cadastro][cep]">
+						<span class="titulo-form">CEP</span><br />
+						<input type="text" minlength="8" maxlength="8" required name="dindin[cadastro][cep]" />
+					</label>
+					<label for="dindin[cadastro][endereco]">
+						<span class="titulo-form">Endereço</span><br />
+						<input type="text" minlength="8" required name="dindin[cadastro][endereco]" />
+					</label>
+					<label for="dindin[cadastro][numero]" class="width30 pullleft">
+						<span class="titulo-form">Número</span><br />
+						<input type="text" minlength="1" required name="dindin[cadastro][numero]" />
+					</label>
+					<label for="dindin[cadastro][complemento]" class="width62 pullright">
+						<span class="titulo-form">Complemento (opcional)</span><br />
+						<input type="text" name="dindin[cadastro][complemento]" />
+					</label>
+				</div>
+				<div class="flutual pullright">
+					<label for="dindin[cadastro][bairro]">
+						<span class="titulo-form">Bairro</span><br />
+						<input type="text" minlength="7" required name="dindin[cadastro][bairro]" />
+					</label>
+					<label for="dindin[cadastro][cidade]">
+						<span class="titulo-form">Cidade</span><br />
+						<input type="text" minlength="5" required name="dindin[cadastro][cidade]" />
+					</label>
+					<label for="dindin[cadastro][estado]">
+						<span class="titulo-form">Estado</span><br />
+						<input type="text" minlength="2" maxlength="2" required name="dindin[cadastro][estado]" />
+					</label>
+				</div>
+			</div>
+			<div class="botoes">
+				<button href="#" class="btnvoltar mgtop60 anterior" ordem="3">
+					VOLTAR
+				</button>
+				<button href="#" class="botaodindin mgtop60 proximo" ordem="5">
+					PRÓXIMO
+				</button>
+			</div>
+		</section>
+		<section class="endereco_entrega_form">
+			<div class="topo">
+				<div class="logo textcenter">
+					<img src="images/logo_dindin_colorida.png" />
+				</div>
+				<p class="paginacompra textcenter">
+					Endereço de entrega
+				</p>
+				<div class="passos">
+					<div class="numeros">
+						<div numero="1">1</div>
+						<div numero="2">2</div>
+						<div numero="3">3</div>
+						<div numero="4">4</div>
+						<div numero="5">5</div>
+					</div>
+				</div>
+			</div>
+			<div class="formulario" number="2">
+				<div class="flutua">
+					<label for="dindin[cadastro][cep]">
+						<span class="titulo-form">CEP</span><br />
+						<input type="text" minlength="8" maxlength="8" required name="dindin[cadastro][entrega][cep]" />
+					</label>
+					<label for="dindin[cadastro][endereco]">
+						<span class="titulo-form">Endereço</span><br />
+						<input type="text" minlength="8" required name="dindin[cadastro][entrega][endereco]" />
+					</label>
+					<label for="dindin[cadastro][numero]" class="width30 pullleft">
+						<span class="titulo-form">Número</span><br />
+						<input type="text" minlength="1" required name="dindin[cadastro][entrega][numero]" />
+					</label>
+					<label for="dindin[cadastro][entrega][complemento]" class="width62 pullright">
+						<span class="titulo-form">Complemento (opcional)</span><br />
+						<input type="text" name="dindin[cadastro][entrega][complemento]" />
+					</label>
+				</div>
+				<div class="flutual pullright">
+					<label for="dindin[cadastro][bairro]">
+						<span class="titulo-form">Bairro</span><br />
+						<input type="text" minlength="7" required name="dindin[cadastro][entrega][bairro]" />
+					</label>
+					<label for="dindin[cadastro][cidade]">
+						<span class="titulo-form">Cidade</span><br />
+						<input type="text" minlength="5" required name="dindin[cadastro][entrega][cidade]" />
+					</label>
+					<label for="dindin[cadastro][estado]">
+						<span class="titulo-form">Estado</span><br />
+						<input type="text" minlength="2" maxlength="2" required name="dindin[cadastro][entrega][estado]" />
+					</label>
+				</div>
+			</div>
+			<div class="botoes">
+				<button href="#" class="btnvoltar mgtop60 voltarrevisao">
+					VOLTAR
+				</button>
+				<button href="#" class="botaodindin mgtop60 proximorevisao">
+					PRÓXIMO
+				</button>
+			</div>
+		</section>
+		<section ordem="5">
+			<div class="topo">
+				<div class="logo textcenter">
+					<img src="images/logo_dindin_colorida.png" />
+				</div>
+				<p class="paginacompra textcenter">
+					Revise o seu pedido para efetuar o pagamento
+				</p>
+				<div class="passos">
+					<div class="numeros">
+						<div numero="1">1</div>
+						<div numero="2">2</div>
+						<div numero="3">3</div>
+						<div numero="4">4</div>
+						<div numero="5">5</div>
+					</div>
+				</div>
+			</div>
+			<div class="formulario" number="2">
+				<div class="flutuab bglightblue paddingleft30px h340">
+					<div class="space">
+						<h3 class="screen">Seus dados <a class="link_verde" numero="2" href="#">Alterar</a></h3>
+						<span class="screen fontfine" name="nome"></span>
+						<span class="screen fontfine" name="email"></span>
+						<span class="screen fontfine" name="cpf"></span>
+						<span class="screen fontfine" name="data_nascimento"></span>
+						<span class="screen fontfine" name="celular"></span>
+					</div>
+					<div class="screen line"></div>
+					<div class="space">
+						<h3 class="screen">Endereço de cadastro <a class="link_verde" numero="3" href="#">Alterar</a></h3>
+						<span class="screen fontfine" name="rua"></span>
+						<span class="screen fontfine" name="estado"></span>
+						<span class="screen">
+							<strong>Entrega em até 20 dias corridos após a confirmação do pagamento</strong>
+						</span>	
+						<br />
+						<h3 class="screen">Endereço de entrega? <input name="dindin[cadastro][endereco_entrega]" type="checkbox" class="endereco_entrega"></h3>		
+						<span class="screen fontfine" name="rua_entrega"></span>
+						<span class="screen fontfine" name="estado_entrega"></span>
+						<br />			
+					</div>
+				</div>
+				<div class="flutuab bglightblue paddingleft30px h3402">
+					<div class="space h177">
+						<h3 class="screen">Seu pedido <a class="link_verde" href="#">Alterar</a></h3>
+						<div class="pullleft cardsell">
+							<img src="images/cartao-cobranca.png" class="all" />
+						</div>
+						<div class="pullright carddescription">
+							<h3 class="screen pdescriptioncard">
+								Cartão Chip Internacional<br /><br />
+								Valor do cartão: R$ 14,90
+							</h3>
+						</div>
+					</div>
+					<div class="screen line w94"></div>
+					<div class="space">
+						<label for="dindin[cadastro][codigo]" style=" background: #f8f9f9; width: 87% !important; ">
+							<span class="titulo-form">Possui código promocional?</span><br />
+							<input type="text" minlength="7" class="codigoinput" required name="dindin[cadastro][codigo]" />
+							<button class="validar">Validar Código</button>
+						</label>
+					</div>
+					<div class="screen line w94"></div>
+					<div class="space">
+						<h3 class="screen">Total pedido 
+							<span class="pullright pr29">
+								<strong>R$ 14,90</strong>
+							</span>
+						</h3>
+					</div>
+				</div>
+			</div>
+			<div class="botoes">
+				<button href="#" class="btnvoltar mgtop60 anterior" ordem="4">
+					VOLTAR
+				</button>
+				<button href="#" class="botaodindin mgtop60 proximo" ordem="6">
+					PRÓXIMO
+				</button>
+			</div>
+		</section>
+		<section ordem="6">
+			<div class="topo">
+				<div class="logo textcenter">
+					<img src="images/logo_dindin_colorida.png" />
+				</div>
+				<p class="paginacompra textcenter">
+					Selecione uma forma de pagamento
+				</p>
+				<div class="passos">
+					<div class="numeros">
+						<div numero="1">1</div>
+						<div numero="2">2</div>
+						<div numero="3">3</div>
+						<div numero="4">4</div>
+						<div numero="5">5</div>
+					</div>
+				</div>
+			</div>
+			<br /><br /><br /><br />
+			<div class="formulario" number="0">
+				<div class="bglightblue pagamentoScreen frame2">
+					<h3 class="screen">Pagamento</h3>
+					<label class="checkbox mgtop15px" for="dindin[cadastro][pagamento]">
+						<input type="radio" class="radio1" name="dindin[cadastro][pagamento]" value="boleto_bancario" /> 
+						<span class="checkmark"></span>
+						<span class="describoleto">Boleto bancário</span>
+					</label>
+					<label class="checkbox" for="dindin[cadastro][pagamento2]">
+						<input type="radio" class="radio1" name="dindin[cadastro][pagamento]" value="cartao_credito" />
+						<span class="checkmark"></span>
+						<span class="describoleto">Cartão de crédito</span>
+					</label>
+				</div>
+				<span class="pdesc">Ao finalizar a compra você declara ter lido e aceita os <a href="#" class="agreen">termos e condições</a>.</span>
+			</div>
+			<div class="botoes">
+				<button href="#" class="btnvoltar mgtop60 anterior" ordem="3">
+					VOLTAR
+				</button>
+				<button href="#" class="botaodindin mgtop60 escolheMeioPagamento">
+					PRÓXIMO
+				</button>
+			</div>
+
+		</section>
+		<section ordem="7">
+			<div class="topo">
+				<div class="logo textcenter">
+					<img src="images/logo_dindin_colorida.png" />
+				</div>
+				<p class="paginacompra textcenter">
+					Boleto bancário
+				</p>
+				<p class="textcenter">
+					O boleto foi gerado e enviado para o e-mail informado no cadastro
+				</p>
+				<div class="bglightblue" style="height: 381px;width: 72%;margin: auto;"></div>
+
+				<p class="textcenter">
+					Em até 48h após a confirmação do pagamento, você receberá um e-mail com o número do pedido.
+				</p>
+				<div class="botoes" style="margin-top: -64px;">
+					<button href="#" class="btnvoltar mgtop60">
+						COMPARTILHAR
+					</button>
+					<button href="#" class="botaodindin mgtop60" style="margin-right: 6%;">
+						COPIAR NÚMERO
+					</button>
+					<button href="#" class="btnvoltar btnfechar mgtop60">
+						FECHAR
+					</button>
+				</div>
+			</div>
+		</section>
+		<section ordem="8">
+			<div class="topo">
+				<div class="logo textcenter">
+					<img src="images/logo_dindin_colorida.png" />
+				</div>
+				<p class="paginacompra textcenter">
+					Dados do cartão de crédito
+				</p>
+				<div class="passos">
+					<div class="numeros">
+						<div numero="1">1</div>
+						<div numero="2">2</div>
+						<div numero="3">3</div>
+						<div numero="4">4</div>
+						<div numero="5">5</div>
+					</div>
+				</div>
+			</div>
+			<div class="formulario cartaocredito" number="2">
+				<div class="bglightblue pagamentoScreen div2">
+					<div class="div3">
+						<div class="div4l">
+							<label for="dindin[cadastro][cartao_credito][nome_impresso]">
+								<span class="titulo-form">Nome impresso</span><br>
+								<input placeholder="Como aparece no cartão" type="text" name="dindin[cadastro][cartao_credito][nome_impresso]">
+							</label>
+							<label for="dindin[cadastro][cartao_credito][numero_cartao]">
+								<span class="titulo-form">Número do cartão</span><br>
+								<input placeholder="Digitar somente números" type="text" name="dindin[cadastro][cartao_credito][numero_cartao]">
+							</label>
+						</div>
+						<div class="div4r">
+							<label for="dindin[cadastro][cartao_credito][cpf]">
+								<span class="titulo-form">CPF do titular</span><br>
+								<input placeholder="Digitar somente números" type="text" name="dindin[cadastro][cartao_credito][cpf]">
+							</label>
+							<label for="dindin[cadastro][cartao_credito][validade][mes]" class="meslabel">
+								<span class="titulo-form">Validade</span><br>
+								<select placeholder="Mês" type="text" name="dindin[cadastro][cartao_credito][validade][mes]" class=" mesinput ">
+									<option value="2019">2019</option>
+									<option value="2020">2020</option>
+									<option value="2021">2021</option>
+									<option value="2022">2022</option>
+								</select>
+								<select placeholder="Ano" type="text" name="dindin[cadastro][cartao_credito][validade][ano]" class=" anoselect">
+									<option value="2019">2019</option>
+									<option value="2020">2020</option>
+									<option value="2021">2021</option>
+									<option value="2022">2022</option>
+								</select>
+							</label>
+							<label for="dindin[cadastro][cartao_credito][validade][cvv]" class="cvvinput">
+								<span class="titulo-form">Validade</span><br>
+								<input placeholder="XXX" type="text" name="dindin[cadastro][cartao_credito][cvv]">
+							</label>
+						</div>
+					</div>
+					<div style="display: block;">
+						<div class="line longline"></div>
+					</div>
+					<div class="div5">
+						<div class="div6">
+							<div style="display: block;">
+								<label for="dindin[cadastro][cartao_credito][cep]" class="div7">
+									<span class="titulo-form">CEP</span><br>
+									<input placeholder="Digitar somente números" type="text" name="dindin[cadastro][cartao_credito][cep]">
+								</label>
+								<label class="div8">
+									<a href="#" class="agreen">Não sei meu CEP</a>
+								</label>
+							</div>
+						</div>
+						<div class="div9">
+							<label for="dindin[cadastro][cartao_credito][numero]" class=" div10">
+								<span class="titulo-form">Número</span><br>
+								<input placeholder="" type="text" name="dindin[cadastro][cartao_credito][numero]">
+							</label>
+							<label for="dindin[cadastro][cartao_credito][complemento]" class="div11">
+								<span class="titulo-form">Complemento (opcional)</span><br>
+								<input placeholder="" type="text" name="dindin[cadastro][cartao_credito][complemento]">
+							</label>
+						</div>
+					</div>
+					<div class="div12">
+						<label for="dindin[cadastro][cartao_credito][endereco]" class=" div13 ">
+							<span class="titulo-form">Endereço de cobrança</span><br>
+							<input placeholder="" type="text" name="dindin[cadastro][cartao_credito][endereco]">
+						</label>
+						<label for="dindin[cadastro][cartao_credito][bairro]" class="div14">
+							<span class="titulo-form">Bairro</span><br>
+							<input placeholder="" type="text" name="dindin[cadastro][cartao_credito][bairro]">
+						</label>
+						<label for="dindin[cadastro][cartao_credito][cidade]" class="div15">
+							<span class="titulo-form">Cidade</span><br>
+							<input placeholder="" type="text" name="dindin[cadastro][cartao_credito][cidade]">
+						</label>
+						<label for="dindin[cadastro][cartao_credito][estado]" class="pullright inputestado">
+							<span class="titulo-form">Estado</span><br>
+							<select placeholder="Estado" type="text" name="dindin[cadastro][cartao_credito][validade][ano]" class="inputano">
+								<option value="AC">Acre</option>
+								<option value="AL">Alagoas</option>
+								<option value="AP">Amapá</option>
+								<option value="AM">Amazonas</option>
+								<option value="BA">Bahia</option>
+								<option value="CE">Ceará</option>
+								<option value="DF">Distrito Federal</option>
+								<option value="ES">Espírito Santo</option>
+								<option value="GO">Goiás</option>
+								<option value="MA">Maranhão</option>
+								<option value="MT">Mato Grosso</option>
+								<option value="MS">Mato Grosso do Sul</option>
+								<option value="MG">Minas Gerais</option>
+								<option value="PA">Pará</option>
+								<option value="PB">Paraíba</option>
+								<option value="PR">Paraná</option>
+								<option value="PE">Pernambuco</option>
+								<option value="PI">Piauí</option>
+								<option value="RJ">Rio de Janeiro</option>
+								<option value="RN">Rio Grande do Norte</option>
+								<option value="RS">Rio Grande do Sul</option>
+								<option value="RO">Rondônia</option>
+								<option value="RR">Roraima</option>
+								<option value="SC">Santa Catarina</option>
+								<option value="SP">São Paulo</option>
+								<option value="SE">Sergipe</option>
+								<option value="TO">Tocantins</option>
+							</select>
+						</label>
+					</div>
+					<div class="paragrafo">
+						<p class="textcenter">
+							Ao finalizar a compra você declara ter lido e aceita os <a href="#" class="agreen">termos e condições</a>.
+						</p>
+					</div>
+					<div class="botoes">
+						<button href="#" class="btnvoltar mgtop60 retornaEscolha">
+							VOLTAR
+						</button>
+						<button href="#" class="botaodindin">FINALIZAR PAGAMENTO</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section ordem="9">
+			<div class="topo">
+				<div class="logo textcenter">
+					<img src="images/logo_dindin_colorida.png" />
+				</div>
+				<p class="paginacompra textcenter">
+					Parabéns, compra realizada com sucesso!
+				</p>
+				<br />
+				<p class="textcenter">
+					Número do pedido:
+					<br />
+					<strong>123456</strong>
+				</p>
+				<p class="textcenter">
+					Seu cartão já está sendo produzido e será entregue em até <strong>10 dias úteis</strong>
+					<br /><br />
+					Quando receber, faça o <strong>desbloqueio pelo app</strong>.
+					<br /><br />
+					Baixe aqui o app Dindin:
+					<br /><br /><br />
+					<a href=""><img src="images/apple-store.png" class=" div16 " /></a>
+					<a href=""><img src="images/google-play.png" class=" div17 " /></a>
+				</p>
+				<div class="botoes">
+					<button href="#" class="botaodindin mgtop60">
+						FINALIZAR PAGAMENTO
+					</button>
+				</div>
+			</div>
+
+		</section>
+		<footer>
+			
+		</footer>
+	</form>
+	<script type="text/javascript">
+		
+		let inputs = document.getElementsByTagName('input');
+		let select = document.getElementsByTagName('select');
+		let proximos = document.querySelectorAll('.proximo');
+		let anterior = document.querySelectorAll('.anterior');
+		let numero = document.querySelectorAll('div[numero]');
+		let enviados = document.getElementById('enviadados');
+		let section = document.querySelectorAll('section[ordem]')
+		let a = document.querySelectorAll('a[numero]');
+		let radio = document.querySelectorAll('input[type="radio"]');
+		let cep = document.querySelector('input[name="dindin[cadastro][cep]"]');
+		let cep_entrega = document.querySelector('input[name="dindin[cadastro][entrega][cep]"]');
+
+		//Recupera valores para exibir na confirmação
+		function pegaValoresNoForm(){
+			var valor = document.querySelector('input[name="dindin[cadastro][nome_completo]"]').value;
+			document.querySelector('span[name="nome"]').innerText = valor;
+			valor = document.querySelector('input[name="dindin[cadastro][email]"]').value;
+			document.querySelector('span[name="email"]').innerText = valor;
+			valor = document.querySelector('input[name="dindin[cadastro][cpf]"]').value;
+			document.querySelector('span[name="cpf"]').innerText = "CPF "+valor;
+			valor = document.querySelector('input[name="dindin[cadastro][data_nascimento]"]').value;
+			document.querySelector('span[name="data_nascimento"]').innerText = valor;
+			valor = document.querySelector('input[name="dindin[cadastro][celular]"]').value;
+			document.querySelector('span[name="celular"]').innerText = valor;
+			valor = document.querySelector('input[name="dindin[cadastro][endereco]"]').value;
+			valor += " - "+document.querySelector('input[name="dindin[cadastro][complemento]"]').value; 
+			valor += " "+document.querySelector('input[name="dindin[cadastro][numero]"]').value; 
+			document.querySelector('span[name="rua"]').innerText= valor;
+			valor = document.querySelector('input[name="dindin[cadastro][cidade]"]').value;
+			valor += " - "+ document.querySelector('input[name="dindin[cadastro][estado]"]').value;
+			document.querySelector('span[name="estado"]').innerText = valor;	
+		}
+		function pegaValoresNoFormEnderecoEntrega(){
+			valor = document.querySelector('input[name="dindin[cadastro][entrega][endereco]"]').value;
+			valor += " - "+document.querySelector('input[name="dindin[cadastro][entrega][complemento]"]').value;
+			valor += " "+document.querySelector('input[name="dindin[cadastro][entrega][numero]"]').value; 
+			document.querySelector('span[name="rua_entrega"]').innerText= valor;
+			console.log(valor);
+			valor = document.querySelector('input[name="dindin[cadastro][entrega][cidade]"]').value;
+			valor += " - "+ document.querySelector('input[name="dindin[cadastro][entrega][estado]"]').value;
+			document.querySelector('span[name="estado_entrega"]').innerText = valor;	
+		}
+
+		//Marca página
+		function marcaMenu(valor,valor2){
+			document.querySelector('section[ordem="'+valor+'"] div[numero="'+valor2+'"]').style.background = '#89c86a';
+			document.querySelector('section[ordem="'+valor+'"] div[numero="'+valor2+'"]').style.color = '#FFF';
+			document.querySelector('section[ordem="'+valor+'"] div[numero="'+valor2+'"]').style.borderRadius = '50px';
+		}
+		//Clica nos links 'alterar'
+		for (var i = a.length - 1; i >= 0; i--) {
+			a[i].onclick = function(e){
+				e.preventDefault();
+				e.stopPropagation();
+				let pagina = parseInt(this.getAttribute('numero'));
+				for (var i = section.length - 1; i >= 0; i--) {
+					section[i].setAttribute('style', '');
+				}
+				section[0].setAttribute('style', 'display:none !important');
+				section[pagina].setAttribute('style', 'display:block !important');
+			}
+		}
+		//Clica nos numeros
+		for (var i = numero.length - 1; i >= 0; i--) {
+			numero[i].onclick = function(e){
+				e.preventDefault();
+				e.stopPropagation();
+				let valor = parseInt(this.getAttribute('numero'));
+				let section = document.querySelectorAll('section[ordem]');
+				for (var i = section.length - 1; i >= 0; i--) {
+					section[i].style = '';
+				}
+				for (var ii = numero.length - 1; ii >= 0; ii--) {
+					numero[ii].style="";
+				}
+				section[0].style = 'display:none !important;';
+				document.querySelector('section[ordem="'+valor+'"]').setAttribute('style', 'display:block !important;');
+				marcaMenu(valor,valor);
+			}
+		}
+		//Clica proximo
+		for (var i = proximos.length - 1; i >= 0; i--) {
+			proximos[i].onclick = function(e){
+				e.preventDefault();
+				e.stopPropagation();
+				let proximo = parseInt(this.getAttribute('ordem'));
+				let anterior = proximo -1;
+				document.querySelector('section[ordem="'+proximo+'"]').setAttribute('style', 'display:block !important');
+				document.querySelector('section[ordem="'+anterior+'"]').setAttribute('style', 'display:none !important');
+				marcaMenu(proximo,proximo-1);
+				pegaValoresNoForm();
+			}
+		}
+		//Clica anterior
+		for (var i = anterior.length - 1; i >= 0; i--) {
+			anterior[i].onclick = function(e){
+				e.preventDefault();
+				e.stopPropagation();
+				let anterior = parseInt(this.getAttribute('ordem'));
+				let proximo = anterior +1;
+				document.querySelector('section[ordem="'+anterior+'"]').setAttribute('style', 'display:block !important');
+				document.querySelector('section[ordem="'+proximo+'"]').setAttribute('style', 'display:none !important');
+				document.querySelector('section[ordem="'+proximo+'"] div[numero="'+(proximo-1)+'"]').style = '';
+				pegaValoresNoForm();
+			}
+		}
+		//Escolhe tipo de pagamento
+		document.querySelector('.escolheMeioPagamento').onclick = function(){
+			for (var i = radio.length - 1; i >= 0; i--) {
+				if(radio[i].checked){
+					if(radio[i].value == 'boleto_bancario'){
+						for (var i = section.length - 1; i >= 0; i--) {
+							section[i].style = '';
+						}
+						section[0].style = "display:none !important;";
+						document.querySelector('section[ordem="7"]').style = "display:block !important;";
+					}else{
+						for (var i = section.length - 1; i >= 0; i--) {
+							section[i].style = '';
+						}
+						section[0].style = "display:none !important;";
+						document.querySelector('section[ordem="8"]').style = "display:block !important;";
+					}
+				}
+			}
+		}
+		//Fecha janela
+		document.querySelector('.btnfechar').onclick = function(e){
+			e.preventDefault();
+			window.open('','_parent','');
+			window.close();
+		}
+		//Endereço de entrega
+		document.querySelector('.endereco_entrega').onclick = function(e){
+			if(this.checked == true)
+			{
+				document.querySelectorAll('section[ordem]').forEach(function(v,i){
+					v.style = "display:none !important;";
+				});
+				document.querySelector('section.endereco_entrega_form').style = "display:block !important;";
+			}
+		}
+		//Retorna escolha
+		document.querySelector('.retornaEscolha').onclick = function(e){
+			e.preventDefault();
+			document.querySelector('section[ordem="8"]').style = "display:none !important;";
+			document.querySelector('section[ordem="6"]').style = "display:block !important;";
+		}
+
+		//Clicar voltar endereco e avancar
+		let voltaravancar = document.querySelectorAll('.voltarrevisao,.proximorevisao');
+		voltaravancar.forEach(function(v,i){
+			v.onclick = function(e){
+				e.preventDefault();
+				pegaValoresNoFormEnderecoEntrega();
+				document.querySelectorAll('section[ordem]').forEach(function(v,i){
+					v.style = "display:none !important;";
+				});
+				document.querySelector('section.endereco_entrega_form').style = "display:none !important;";
+				document.querySelector('section[ordem="5"]').style = "display:block !important;";
+			}
+		});
+
+		//Roboto Condensed 5
+		//VALIDACOES
+		function cpf(name){
+			let input = document.querySelector('input[name="'+name+'"]');
+			input.onkeyup = function(e){
+				var value = this.value;
+				if(value.length == 3){
+					value = value+'.';
+				}
+				if(value.length == 7){
+					value = value+'.';
+				}
+				if(value.length == 11){
+					value = value+'-';
+				}
+				input.value = value;
+				//111.111.111-11
+			}
+		}
+		function verificaCep(url) {
+			var xhttp;
+			xhttp=new XMLHttpRequest();
+			xhttp.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200) {
+					let r = JSON.parse(this.response);
+					document.querySelector('input[name="dindin[cadastro][bairro]"]').value = r.bairro;
+					document.querySelector('input[name="dindin[cadastro][cidade]"]').value = r.localidade;
+					document.querySelector('input[name="dindin[cadastro][estado]"]').value = r.uf;
+					document.querySelector('input[name="dindin[cadastro][endereco]"]').value = r.logradouro;
+				}
+			};
+			xhttp.open("GET", url, true);
+			xhttp.send();
+		}
+		function verificaCep2(url) {
+			var xhttp;
+			xhttp=new XMLHttpRequest();
+			xhttp.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200) {
+					let r = JSON.parse(this.response);
+					document.querySelector('input[name="dindin[cadastro][entrega][bairro]"]').value = r.bairro;
+					document.querySelector('input[name="dindin[cadastro][entrega][cidade]"]').value = r.localidade;
+					document.querySelector('input[name="dindin[cadastro][entrega][estado]"]').value = r.uf;
+					document.querySelector('input[name="dindin[cadastro][entrega][endereco]"]').value = r.logradouro;
+				}
+			};
+			xhttp.open("GET", url, true);
+			xhttp.send();
+		}
+		function cep2(){
+			document.querySelector('input[name="dindin[cadastro][entrega][cep]"]').onchange = function(e){
+				verificaCep2("http://viacep.com.br/ws/"+this.value+"/json/");
+			}
+			document.querySelector('input[name="dindin[cadastro][cep]"]').onchange = function(e){
+				verificaCep("http://viacep.com.br/ws/"+this.value+"/json/");
+			}
+		}
+		cep2();
+		function soNumeros(name){
+			let input = document.querySelector('input[name="'+name+'"]');
+			input.onkeyup = function(e){
+				let onlyNumber = /[0-9]/g;
+				var value = this.value
+				value = value.match(onlyNumber).toString();
+				value = value.replace(/\,/g,'');
+				document.querySelector('input[name="'+name+'"]').value = value;
+			}
+		}
+		function soEmail(name){
+			let input = document.querySelector('input[name="'+name+'"]');
+			input.onkeyup = function(e){
+				let onlyNumber = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+				var value = this.value
+				value = value.match(onlyNumber);
+				if(value !== null){
+					//retorna true
+				}else{
+					//Marca falso
+				}
+			}
+		}
+		function soSenha(name){
+			let input = document.querySelector('input[name="'+name+'"]');
+			input.onkeyup = function(e){
+				let onlyNumber = /^[a-zA-Z0-9]*$/i;
+				var value = this.value
+				var tamanho = value.length;
+				value = value.match(onlyNumber);
+				if(value !== null){
+					//retorna true
+				}else{
+					//Marca falso
+				}
+			}
+		}
+		function sodataNascimento(name){
+			let input = document.querySelector('input[name="'+name+'"]');
+			input.onkeyup = function(e){
+				var value = this.value
+				var tamanho = value.length;
+				if(tamanho == 2){
+					value = value+'/';
+				}
+				if(tamanho == 5){
+					value = value+'/';
+				}
+				document.querySelector('input[name="'+name+'"]').value = value;
+			}
+		}
+		function sotelefone(name){
+			let input = document.querySelector('input[name="'+name+'"]');
+			input.onkeyup = function(e){
+				var value = this.value
+				var tamanho = value.length;
+				if(tamanho == 2){
+					value = '('+value+')';
+				}
+				if(tamanho == 9){
+					value = value+'-';
+				}
+				document.querySelector('input[name="'+name+'"]').value = value;
+			}
+		}
+		function sominimu(name,number){
+			let input = document.querySelector('input[name="'+name+'"]');
+			input.onkeyup = function(e){
+				var value = this.value
+				var tamanho = value.length;
+				if(tamanho >= number){
+					//certo
+				}else{
+					//errado
+				}
+			}
+		}
+		cpf("dindin[cadastro][cpf]");
+		soNumeros("dindin[cadastro][cep]");
+		soNumeros("dindin[cadastro][numero]");
+		soEmail("dindin[cadastro][email]");
+		soSenha("dindin[cadastro][senha]");
+		sodataNascimento("dindin[cadastro][data_nascimento]");
+		sotelefone("dindin[cadastro][celular]");
+
+		function defineFonte(){
+			let plataforma = navigator.platform;
+			if(plataforma == 'Win32'){
+				document.getElementsByTagName('body')[0].setAttribute('style','font-family:"dindin" !important;');
+			}
+		}
+		defineFonte();
+
+		function precedeLabel(){
+		}
+
+	</script>
+</body>
+</html>
